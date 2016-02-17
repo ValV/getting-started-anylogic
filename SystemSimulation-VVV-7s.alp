@@ -5902,7 +5902,7 @@ import java.awt.datatransfer.StringSelection;]]></Import>
 	datasetBestInfeasibleObjective.reset();
 	datasetBestFeasibleObjective.reset();
 	
-	if (ovSimulation) {
+	if (false /*ovSimulation*/) {/* TODO: Remove this condition
 		setParameterVariableStepSize(_oqvar_numFFActors, 1);
 		setParameterVariableLowerBound(_oqvar_numFFActors, ovNumFFActorsStd);
 		setParameterVariableUpperBound(_oqvar_numFFActors, ovNumFFActorsStd);
@@ -5919,7 +5919,7 @@ import java.awt.datatransfer.StringSelection;]]></Import>
 		setParameterVariableSuggestedValue(_oqvar_numSMActresses, ovNumSMActressesStd);
 		addSuggestedSolution();
 
-		ovParameterVariables = 0;
+		ovParameterVariables = 0; //*/
 	} else {
 		switch (radioOptiSwitch.getValue()) {
 			case 0: { /* Custom desision variables (employees optimization) */
